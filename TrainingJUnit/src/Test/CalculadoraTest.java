@@ -56,6 +56,11 @@ public class CalculadoraTest {
 		assertEquals(0.7083333333333333, result, 0.871); 
 	}
 	
+	@Test(timeout=3000)
+	public void timeOutTest(){
+		cal.timeOut();
+	}
+	
 	@After
 	public void afterTest(){
 		System.out.println("After!!!");
